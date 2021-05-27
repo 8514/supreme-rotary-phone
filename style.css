@@ -1,17 +1,12 @@
-h1
-{
-	color: red; 
-	font-size: 40px;
+body{
+text-align: center;    
 }
-.body_backgorund {
-	background-image: Url("bg1.jpg");
-	background-position: center;
-	background-size: cover;
+#laptop{
+display: none;
+margin-top: 20px;
+margin-bottom: 20px;
+text-align: center;    
 }
-
-#myCanvas{
-border-width: 10px;
-background-color: #ffffff;
-border-style: ridge;
-
+input{
+margin: 10px;    
 }

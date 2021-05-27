@@ -1,38 +1,31 @@
-canvas = document.getElementById("myCanvas");
-ctx=canvas.getContext("2d");
+var names_of_people=[];
+function submit(){   
+var guest_name=document.getElementById("tv").value;
+names_of_people.push(guest_name); 
+var length_of_array=names_of_people.length;
+console.log(length_of_array);
+document.getElementById("display_name").innerHTML=names_of_people;
+}
+function Sorting(){
+names_of_people.sort();
+var yug=names_of_people.join("<br>");
+document.getElementById("wall").innerHTML=yug;
+}
+function show(){
+var yug= names_of_people.join("<br>");
+document.getElementById("food").innerHTML=yug;
+document.getElementById("laptop").style.display="inline-block";
+}
+function searching(){
+var sis=document.getElementById("teddy").value;
+var found=0;
+var j;
+for(j=0;j<names_of_people.length;j++){
+if(sis==names_of_people[j]){
+found=found+1;    
+}    
+}
+document.getElementById("blanket").innerHTML=" name found "+found+" times ";
+}
+    
 
-ctx.beginPath();
-ctx.strokeStyle = "grey";
-ctx.lineWidth=4;
-ctx.rect(150,143,430,200);
-ctx.stroke();
-
-ctx.beginPath();
-ctx.strokeStyle = "blue";
-ctx.lineWidth=5;
-ctx.arc(250,210,40,0,2 * Math.PI);
-ctx.stroke();
-
-ctx.beginPath();
-ctx.strokeStyle = "black";
-ctx.lineWidth=5;
-ctx.arc(350,210,40,0,2 * Math.PI);
-ctx.stroke();
-
-ctx.beginPath();
-ctx.strokeStyle = "red";
-ctx.lineWidth=5;
-ctx.arc(450,210,40,0,2 * Math.PI);
-ctx.stroke();
-
-ctx.beginPath();
-ctx.strokeStyle = "yellow";
-ctx.lineWidth=5;
-ctx.arc(300,250,40,0,2 * Math.PI);
-ctx.stroke();
-
-ctx.beginPath();
-ctx.strokeStyle = "green";
-ctx.lineWidth=5;
-ctx.arc(400,250,40,0,2 * Math.PI);
-ctx.stroke();

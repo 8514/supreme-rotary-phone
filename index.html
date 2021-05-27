@@ -1,18 +1,28 @@
-
-<!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
-
+<title>Guest List</title>    
 </head>
-<title>Olympic symbol</title>
-<body class="body_backgorund">
-
-<center>
-	<h1>Olympic Symbol</h1>
-	<canvas id="myCanvas" width="800" height="600">
-	</canvas>
-</center>
-<script src="main.js"></script>
-<script async src="https://drv.tw/inc/wd.js"></script></body>
+<body>
+<link rel="stylesheet" href="style.css">
+<script src="main.js">    
+</script>    
+</body>
+<h3 style="margin-top: 20px; margin-bottom: 20px;">Guest List</h3>
+<div id="sleepy">
+<input type="text" id="tv" placeholder="Enter Name"></input>
+<button onclick="submit()" id="drawing">Submit</button>    
+</div>
+<hr>
+<div id="display_name">
+<hr>    
+</div>
+<h3>Guest List</h3>
+<button onclick="show()" id="bowl">show</button>
+<div><p id="food"></p></div> 
+<hr>
+<button onclick="Sorting()" id="laptop">Sort</button>
+<div id="wall"></div>
+<hr>
+<div><input id="teddy" type="text" placeholder="search name"></input>&nbsp;<button onclick="searching() "id="matches">search</button>
+<p id="blanket"></p></div>        
 </html>
